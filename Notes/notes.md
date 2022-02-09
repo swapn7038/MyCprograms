@@ -67,3 +67,9 @@ Rules for constructing real constants  often called as Floating point constants 
 
 Rules for constructing Character Constants 
 1. 
+
+
+----------------------------------------------
+6. Data Types Revisited 
+ Storage Classes in C 
+ 
