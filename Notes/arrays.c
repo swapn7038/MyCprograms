@@ -1,3 +1,131 @@
+// Bro code: Youtube channel 
+// Date and time : 9/2/22 11:00 PM 
+
+/*
+
+#include<stdio.h>
+int main(){
+
+    // array = a daat structure that can store many values of the same data types 
+
+    double prices[] = {5.0, 4.5, 5.5, 3.2, 2.1, 5.5, 3.5, 43}; 
+
+    for(int i=0; i<sizeof(prices)/sizeof(prices[0]); i++){
+           printf("$%.2lf \n", prices[i]); 
+    } 
+    // printf("%lf \n ", prices[i]);   
+
+
+    return 0;   
+ }
+
+
+*/
+
+
+
+// 2D arrays = an array, where each element is an entire array 
+// useful if you need a matrix, grid, or table of data 
+
+
+/*
+
+#include<stdio.h>
+int main(){
+ 
+//   int number[4] [4] = {{1, 2, 3, 4}, {5, 6, 7, 8}};
+
+int number[2][3]; 
+
+number[0][0] = 1; 
+number[0][1] = 2; 
+number[0][2] = 3; 
+number[1][0] = 4; 
+number[1][1] = 5; 
+number[1][2] = 6; 
+
+
+// for(int i=0; i<sizeof(number)/sizeof(0);  i++){
+                                                        //   WE NEED NESTED LOOP (LOOP INSIDE LOOP) BECAUSE, IT IS 2D ARRAY // ROW NAD COLUMS IS PRESENT 
+// printf("%d \n ", number);   
+// }
+  
+
+  for(int i=0; i<=2; i++){
+      for(int j=0; j<=3; j++){  // we also need two for loops, one for rows and one for column 
+            //  printf("%d\n", number);  // this is wrong method 
+            printf("%d ", number[i][j]);
+
+      }
+      printf("\n"); // Also not to forget new line 
+
+  }
+  
+  return 0; 
+}
+
+
+*/
+
+
+// PROGRAM TO PRINT ARRAY IF WE ADDED NEW ELEMENTS IN A ARRAY
+
+#include<stdio.h>
+int main(){
+ 
+
+
+
+int number[3][3] = {{1, 2, 3}, 
+                   {4, 5, 6}, 
+                   {7, 8, 9}} ; 
+
+    int rows = sizeof(number)/sizeof(number[0]); 
+    int cloumn = sizeof(number[0])/sizeof(number[0][0]);
+
+    printf("rows \n : %d", rows); 
+    printf("columns \n : %d", cloumn); 
+     
+
+// number[0][0] = 1; 
+// number[0][1] = 2; 
+// number[0][2] = 3; 
+// number[1][0] = 4; 
+// number[1][1] = 5; 
+// number[1][2] = 6; 
+// number[1][3] = 12; 
+// number[1][4] = 22; 
+
+
+// for(int i=0; i<sizeof(number)/sizeof(0);  i++){
+                                                        //   WE NEED NESTED LOOP (LOOP INSIDE LOOP) BECAUSE, IT IS 2D ARRAY // ROW NAD COLUMS IS PRESENT 
+// printf("%d \n ", number);   
+// }
+  
+
+  for(int i=0; i<=rows; i++){
+      for(int j=0; j<=cloumn; j++){  // we also need two for loops, one for rows and one for column 
+            //  printf("%d\n", number);  // this is wrong method 
+            printf("%d ", number[i][j]);
+
+      }
+      printf("\n"); // Also not to forget new line 
+
+  }
+  
+  return 0; 
+}
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 /*
 
 #include<stdio.h>
@@ -64,6 +192,8 @@ void main ()
 
 */
 
+
+/*
 //Program to print largest and second largest array from the List
 #include <stdio.h>
 void main ()
@@ -99,3 +229,5 @@ void main ()
 
      printf("largest = %d, second = %d", largest, sec_largest);
 }
+
+*/
